@@ -1,7 +1,7 @@
 FROM openjdk:8
 
 RUN cd /tmp && wget https://ci.destroystokyo.com/job/PaperSpigot/lastSuccessfulBuild/artifact/paperclip.jar && \
-    mkdir /paper && mv /tmp/paperclip.jar /cord/paperclip.jar
+    mkdir /paper && mv /tmp/paperclip.jar /paper/paperclip.jar
 WORKDIR /paper
 ADD start.sh /paper/start.sh
 RUN chmod +x /paper/start.sh
