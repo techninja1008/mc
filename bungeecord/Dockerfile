@@ -8,4 +8,6 @@ RUN chmod +x /cord/start.sh
 
 VOLUME /cord
 
+ENV BMEM=512M
+
 CMD /cord/start.sh
