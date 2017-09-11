@@ -5,6 +5,8 @@ RUN cd /tmp && wget https://ci.destroystokyo.com/job/PaperSpigot/lastSuccessfulB
 WORKDIR /paper
 ADD start.sh /paper/start.sh
 RUN chmod +x /paper/start.sh
+ADD eph.sh /eph.sh
+RUN chmod +x /eph.sh
 
 VOLUME /paper
 
